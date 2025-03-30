@@ -1,6 +1,28 @@
 {
 	"name": "@codeeditorland/extension-recommender",
+	"version": "0.0.1",
+	"private": false,
 	"description": "Deep learning model to recommend the best extension for a given VS Code workspace",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandExtensionRecommender#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandExtensionRecommender/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandExtensionRecommender.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "dist/lib/index.js",
 	"module": "dist/lib/index.js",
 	"types": "dist/index.d.ts",
@@ -8,7 +30,7 @@
 		"build": "npm run clean && webpack --mode production",
 		"clean": "rimraf dist",
 		"prepack": "npm run build",
-		"prepublishOnly": "npm test"
+		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"mocha": {
 		"extension": [
@@ -20,6 +42,7 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
+		"@playform/build": "0.2.1",
 		"@types/chai": "5.2.1",
 		"@types/node": "22.13.14",
 		"chai": "5.2.0",
@@ -29,5 +52,8 @@
 		"onnxruntime-web": "1.21.0",
 		"rimraf": "6.0.1",
 		"ts-loader": "9.5.2"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
