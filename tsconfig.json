@@ -1,29 +1,21 @@
 {
 	"compilerOptions": {
-		"baseUrl": "./",
-		"declaration": true,
-		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
-		"inlineSources": true,
-		"module": "CommonJS",
+        "module": "CommonJS",
+		"target": "ES6",
 		"moduleResolution": "node",
 		"noEmitOnError": false,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"outDir": "Target",
-		"rootDir": "src",
+		"strict": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
 		"skipLibCheck": true,
 		"sourceMap": true,
-		"strict": true,
-		"target": "ES6"
+		"inlineSources": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"declaration": true,
+		"outDir": "dist"
 	},
-	"extends": "@playform/build/tsconfig",
 	"include": [
-		"lib/**/*.ts",
-		"src",
-		"src",
-		"src",
-		"src",
-		"src"
+		"lib/**/*.ts"
 	]
 }
